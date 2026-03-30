@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Job Portal</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            margin: 0;
+            background: white;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        header, footer {
+            background: teal;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+
+        section {
+            padding: 20px;
+        }
+
+        .job {
+            background: white;
+            border: 1px solid lightgray;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px gray;
+            transition: 0.3s;
+        }
+
+        .job:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 12px gray;
+        }
+
+        form {
+            border: 1px solid lightgray;
+            padding: 15px;
+            max-width: 350px;
+            margin: auto;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px gray;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0;
+            border: 1px solid lightgray;
+            border-radius: 5px;
+        }
+
+        button {
+            background: teal;
+            color: white;
+            border: none;
+            padding: 12px;
+            width: 100%;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background: darkcyan;
+        }
+
+        h2 {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Job Portal</h1>
+    <p>Find Your Dream Job</p>
+</header>
+
+<section>
+    <h2>Latest Jobs</h2>
+
+    <div class="job">
+        <h3>Web Developer</h3>
+        <p><strong>Company:</strong> Tech Solutions</p>
+        <p><strong>Skills:</strong> HTML, CSS, JavaScript</p>
+        <p><strong>Salary:</strong> &#8377;20,000/month</p>
+    </div>
+
+    <div class="job">
+        <h3>Data Analyst</h3>
+        <p><strong>Company:</strong> Data Corp</p>
+        <p><strong>Skills:</strong> Excel, SQL</p>
+        <p><strong>Salary:</strong> &#8377;25,000/month</p>
+    </div>
+
+    <div class="job">
+        <h3>Computer Operator</h3>
+        <p><strong>Company:</strong> Office Hub</p>
+        <p><strong>Skills:</strong> MS Office, Typing</p>
+        <p><strong>Salary:</strong> &#8377;15,000/month</p>
+    </div>
+
+</section>
+
+<section>
+    <h2 style="text-align:center;">Apply for Job</h2>
+
+    <form>
+        <input type="text" placeholder="Full Name" required>
+        <input type="email" placeholder="Email" required>
+
+        <select required>
+            <option value="">Select Job</option>
+            <option>Web Developer</option>
+            <option>Data Analyst</option>
+            <option>Computer Operator</option>
+        </select>
+
+        <button type="submit">Apply Now</button>
+    </form>
+</section>
+
+<footer>
+    <p>&copy; 2025 Job Portal</p>
+</footer>
+
+</body>
+</html>
